@@ -1,8 +1,30 @@
 .blogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    &-content{
+        flex:0 0 70%;
+    }
+    &-aside{
+        flex:0 0 30%;
+        text-align: left;
+        &-text{
+            padding: 30% 15% 0 15%;
+            list-style-type: circle;
+            list-style-position: inside;
+
+        }
+    }
     .post-list{
         list-style-type: none;
     }
     .post-subscribe{
 
     }
+}
+
+@media screen and (max-width : #{$mobile}) {
+    .blogs-aside{
+        display: none;
+    }   
 }
