@@ -24,7 +24,10 @@
 }
 
 @media screen and (max-width : #{$mobile}) {
-    .blogs-aside{
-        display: none;
-    }   
+    .blogs{
+        &-content{
+            flex:0 0 100%;
+        }
+    }
+       
 }
