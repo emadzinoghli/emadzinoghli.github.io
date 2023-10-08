@@ -20,14 +20,14 @@
 
 title: Emad Zinoghli
 email: poshtvan.zinoghli@gmail.com
-tagline: 
+tagline: Emad Zinoghli
 description: >- # this means to ignore newlines until "baseurl:"
-    Amertat theme is a jekyll theme. I developed it as the theme for my own webpage. As a result, it is fit to my own needs.
+    Welcome to personal webpage!
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://emadzinoghli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "https://emadzinoghli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
+locale: en_US
 show_excerpts: True
 excerpt_separator: <!--more-->
 # Build settings
