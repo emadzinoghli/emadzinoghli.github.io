@@ -22,18 +22,18 @@ title: Emad Zinoghli
 email: poshtvan.zinoghli@gmail.com
 tagline: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Darbareye Farzanegi.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+    Amertat theme is a jekyll theme. I developed it as the theme for my own webpage. As a result, it is fit to my own needs.
+baseurl: "/Amertat" # the subpath of your site, e.g. /blog
+url: "https://alxelr2014.github.io/Amertat/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 show_excerpts: True
 excerpt_separator: <!--more-->
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
