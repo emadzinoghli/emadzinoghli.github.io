@@ -4,8 +4,8 @@ title: Blogs
 permalink: /blogs
 ---
 <div class="blogs">  
-  
-    {%- if site.posts.size > 0 -%}
+    <div class="blogs-content">
+        {%- if site.posts.size > 0 -%}
         <ul class="post-list">
             {%- for post in site.posts -%}
             <li>
@@ -20,10 +20,27 @@ permalink: /blogs
             </li>
             {%- endfor -%}
         </ul>
-  
+        {%- endif -%}
+
         <span class="post-subscribe">Subscribe </span> 
         {%- capture feed -%} {{"/feed.xml" | relative_url}} {%- endcapture -%}
         {%- include components/ico-button.html url=feed text="RSS" icon="fa fa-rss" -%}
-    {%- endif -%}
-  
+    </div>
+    
+    <div class="blogs-aside">
+        <div class="blogs-aside-text">
+        <h2> Archive </h2>
+        {%- if site.posts.size > 0 -%}
+        <ul>
+            {%- for post in site.posts -%}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{post.title}}</a>
+            </li>
+            {%- endfor -%}
+        </ul>
+        {%- endif -%}
+    </div>
+
+    </div>
+
   </div>
