@@ -1,0 +1,29 @@
+---
+layout: page
+title: Blogs
+permalink: /blogs
+---
+<div class="blogs">  
+  
+    {%- if site.posts.size > 0 -%}
+        <ul class="post-list">
+            {%- for post in site.posts -%}
+            <li>
+                {%- capture url -%} {{ post.url | relative_url }} {%- endcapture -%}
+                {%- capture date -%} {{ post.date |  date :"%b %-d, %Y" }} {%- endcapture -%}
+
+                {%- if post.show_excerpt -%}
+                    {%- include components/blog-card.html title=post.title date=date text=post.excerpt url=url show_excerpt=post.show_excerpt-%}
+                {%- else -%}
+                    {%- include components/blog-card.html title=post.title date=date text=post.content url=url show_excerpt=post.show_excerpt-%}
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+        </ul>
+  
+        <span class="post-subscribe">Subscribe </span> 
+        {%- capture feed -%} {{"/feed.xml" | relative_url}} {%- endcapture -%}
+        {%- include components/ico-button.html url=feed text="RSS" icon="fa fa-rss" -%}
+    {%- endif -%}
+  
+  </div>

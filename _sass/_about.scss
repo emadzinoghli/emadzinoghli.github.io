@@ -1,0 +1,19 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: map-get($about, margin);
+    &-bio{
+        display: flex;
+        justify-content: space-between;
+        img{
+            justify-self: right;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow:  map-get($about, box_shadow_1), map-get($about, box_shadow_1);
+        }
+        p{
+            margin: 10px; 
+        }
+    }
+
+}

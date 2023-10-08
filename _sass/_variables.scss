@@ -1,0 +1,95 @@
+
+
+$base:(
+    background_color: #e1ebe9,
+    padding: 0px,
+    border: 0px
+);
+
+
+
+$num_tabs : 4;
+
+$tablet: 900px;
+$mobile: 400px;
+
+$header:(
+    margin: 2.5% 3% 1% 3%,
+    padding: 0% 0% 0% 0%,
+    border_radius: 20px,
+    font_size : 1.2em,
+    font_weight : 500,
+    background: #087096,
+    background_hover: #044a63,
+    text_color : white,
+    text_color_hover: #fae23c,
+    item_outline_width : 0px 4px 0px 4px,
+    item_outline_style: solid,
+    item_outline_color: map-get($base, background_color),
+    item_margin : 0% 15% 0% 15%,
+    item_padding :  0% 1% 0% 1%,
+);
+$diff_padding :  max(min(calc(27.5vw - 90px),30vw),5vw);
+
+$page:(
+    margin: auto 0% 0% 0%,
+    padding: 3% #{$diff_padding} 3% #{$diff_padding},
+    font_size : 1.2em,
+    font_weight : 500,
+);
+
+
+$footer:(
+    margin: auto 0% 0% 0%,
+    padding: 0% 0% 0% 0%,
+    font_size : 1em,
+    font_weight : 500,
+    background: #423e3c,
+    background_secondary: #423e3c,
+    background_hover: yellow,
+    text_color : white,
+    text_color_hover: #F78154,
+    
+    divider_color: map-get($base, background_color),
+    item_border : 1px solid black,
+    item_margin : 0px 0px 0px 0px,
+    item_padding :  5px 30% 5px 30%,
+    mid_margin : 0px 0px 0px 0px,
+    mid_padding :  5px 2% 5px 2%,
+    list_margin: 5px 4% 5px 4%,
+    icon_margin: 5px 5px 0px 5px,
+);
+
+
+
+$cards:(
+    margin: 5px 0px 5px 0px,
+);
+
+$blogs:(
+    margin: map-get($cards,margin),
+    text_color_hover: #F78154,
+    text_background: #ddd,
+    text_color_hover_2: #B4436C,
+    text_margin: 5px 5px 5px 20px,
+    readmore_margin: 5px 10px 5px 30px,
+    tags_margin: 10px 10px 10px 20px,
+    tag_margin: 0 5px 0 5px,
+    tag_padding: 8px,
+    box_shadow_1: 0 2px 4px 0 rgba(0, 0, 0, 0.4),
+    box_shadow_2: 0 2px 5px 0 rgba(0, 0, 0, 0.4),
+);
+
+
+$projects:(
+    margin: map-get($cards,margin),
+    box_shadow_1: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
+    box_shadow_2: 0 6px 20px 0 rgba(0, 0, 0, 0.4),
+);
+
+$about:(
+    margin: map-get($cards,margin),
+    box_shadow_1: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
+    box_shadow_2: 0 6px 20px 0 rgba(0, 0, 0, 0.4),
+);
+

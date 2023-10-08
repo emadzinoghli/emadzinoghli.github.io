@@ -1,0 +1,17 @@
+---
+layout: page
+title: Projects
+permalink: /projects
+---
+<h1> Projects </h1>
+    {%- capture desc -%}
+    Description of the project
+    {%- endcapture -%}
+    
+    {%- include components/project-card.html 
+        title="Title"
+        description=desc
+        button="view on Github"
+        url="https://github.com"
+        icon="fa-brands fa-github" -%}
+    

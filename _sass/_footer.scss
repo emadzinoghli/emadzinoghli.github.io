@@ -1,0 +1,108 @@
+.footer {
+    background: map-get($footer, background);
+    margin: map-get($footer, margin);
+    padding: map-get($footer, padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+        color: map-get($footer, text_color);
+        font-weight: map-get($footer, font-weight);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: map-get($footer, text_color_hover);
+    }
+
+    &_upper {
+        flex: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 4px solid map-get($footer, divider_color);
+        border-radius: 1px;
+
+    }
+
+
+    &_middle {
+        border-right: 4px solid map-get($footer, divider_color);
+        border-radius: 1px;
+        flex: 3;
+        color: map-get($footer, text_color);
+        font-size: map-get($footer, font_size);
+        padding: map-get($footer, mid_padding);
+        margin: map-get($footer, mid_margin);
+        ul{
+            margin: map-get($footer, list_margin);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 10px;
+        }
+        li {
+        }
+    }
+
+    button.ico-button {
+        font-size: 0.7em;
+    }
+
+
+    &_contact {
+        color: map-get($footer, text_color);
+        font-size: map-get($footer, font_size);
+        padding: map-get($footer, mid_padding);
+        margin: map-get($footer, mid_margin);
+        flex: 1;
+        text-align: center;
+        a {
+            display: inline-flex;
+            justify-content: center;
+            text-decoration: none;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            font-size: 40px;
+            border-radius: 50%;
+            background: map-get($footer, text_color_hover);
+            color: map-get($base, background_color);
+            margin: map-get($footer, icon_margin);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: map-get($footer, text_color_hover);
+            background: map-get($base, background_color)
+        }
+    }
+
+    &_lower {
+        background-color: map-get($footer, background_secondary);
+        flex: 1;
+    }
+
+    &_copyright {
+        padding: map-get($footer, bio_padding);
+        margin: map-get($footer, bio_margin);
+        color: map-get($footer, text_color);
+        text-align: center;
+    }
+}
+@media screen and (max-width: #{$mobile}){
+    .footer_upper{
+        flex:1;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .footer_middle{
+        display: none;
+    }
+}

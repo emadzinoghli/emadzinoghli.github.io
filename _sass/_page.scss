@@ -1,0 +1,4 @@
+.page{
+    margin: map-get($page, margin);
+    padding: map-get($page, padding);
+}

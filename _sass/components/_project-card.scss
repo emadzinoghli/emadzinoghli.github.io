@@ -1,0 +1,24 @@
+.project-card{
+    margin: map-get($projects, margin);;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.5s; /* add this line, chrome, safari, etc */
+    -moz-transition: all 0.5s; /* add this line, firefox */
+    -o-transition: all 0.5s; /* add this line, opera */
+    transition: all 0.5s;
+    &:hover{
+        box-shadow: map-get($projects, box_shadow_1),map-get($projects, box_shadow_2);
+    }
+    h3{
+
+    }
+    p{
+        margin: 2px 5% 2px 5%;
+    }
+    button{
+        align-self: end;
+    }
+}

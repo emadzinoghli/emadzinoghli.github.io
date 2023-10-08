@@ -1,0 +1,135 @@
+.header {
+    margin: map-get($header, margin);
+    padding: map-get($header, padding);
+    background: map-get($header, background);
+    border-radius: map-get($header, border_radius);
+}
+
+.header_nav_burger {
+    display: none;
+}
+
+
+.navigation {
+
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    &>&_item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        a {
+            flex: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+            text-decoration: none;
+            color: map-get($header, text_color);
+            font-size: map-get($header, font_size);
+            padding: map-get($header, item_padding);
+            margin: map-get($header, item_margin);
+            font-weight: map-get($header, font-weight);
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+
+            svg {
+                margin: 5% 4% 5% 5%;
+                width: 125px;
+                border-radius: 8px;
+
+                rect {
+                    stroke: map-get($header, text_color);
+                }
+
+                line {
+                    stroke: map-get($header, text_color);
+                }
+            }
+
+            @media screen and (max-width: #{$tablet}) {
+                svg {
+                    display: none;
+                }
+            }
+        }
+
+        a:hover {
+            color: map-get($header, text_color_hover);
+            background-color: map-get($header, background_hover);
+            outline-width: map-get($header, item_outline_width);
+            outline-style: map-get($header, item_outline_style);
+            outline-color: map-get($header, item_outline_color);
+
+            svg {
+                rect {
+                    stroke: map-get($header, text_color_hover);
+                }
+
+                line {
+                    stroke: map-get($header, text_color_hover);
+                }
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: #{$mobile}) {
+    .header_nav_burger {
+        display: block;
+        width: auto;
+        cursor: pointer;
+        text-align: right;
+
+        svg {
+            margin: 2% 5% 2% 5%;
+            width: auto;
+            height: 40px;
+            border-radius: 8px;
+
+            rect {
+                stroke: map-get($header, text_color);
+            }
+
+            line {
+                stroke: map-get($header, text_color);
+            }
+        }
+    }
+
+    .navigation {
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 5px 0px 10px 0px;
+
+        &>&_item {
+            width: auto;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 5px 2px 5px 2px;
+
+            a {
+                margin: 0;
+            }
+        }
+
+        &.open {
+            height: auto;
+        }
+    }
+
+}

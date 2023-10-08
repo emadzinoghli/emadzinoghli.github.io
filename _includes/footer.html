@@ -1,0 +1,35 @@
+<footer class="footer">
+    <div class="footer_upper">
+        
+        <div class="footer_middle">
+            <h2> Colophone </h2>
+            <ul>
+                <li> Subscribe to my
+                    {%- capture feed -%} {{"/feed.xml" | relative_url}} {%- endcapture -%}
+                    {%- include components/ico-button.html url=feed text="RSS" icon="fa fa-rss" -%}
+                     news feed. </li>
+                <li> Pages are generated via <a href="https://jekyllrb.com/"> jekyll </a> and are hosted by <a href="https://pages.github.com/"> Github pages</a>.</li>
+                <li> Licensed under a <a href="{{site.data.licenses.CC-BY-NC-4.url}}">Creative Commons Licence <img src="{{site.data.licenses.CC-BY-NC-4.image}}" alt="CC-BY-NC-4.0" style="height: 15px; width: 44px ;"></a>. </li>
+            </ul>
+        </div>
+        <div class="footer_contact">
+            <h2> Contact </h2>
+            {%- for cont in site.data.author.author.contact -%}
+            <a title="{{cont.title}}" href="{{cont.url}}">
+                <i class='{{cont.class}}'></i>
+            </a>
+            {%- endfor -%}
+        </div>
+    </div>
+    <div class="footer_lower">
+        <div class="footer_copyright">
+            © {{ site.title }} {{ site.data.variables.copyright_year }}.
+            <br>
+            <small>
+                {%- for dis in site.data.author.author.disclaimers -%}
+                <span> {{dis}} </span>
+                {%- endfor -%}
+            </small>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,38 @@
+.home {
+    &-title {
+        h-inner {
+            display: inline;
+        }
+
+        img {
+            width: 50px;
+            border: 4px;
+            border-radius: 50%;
+        }
+    }
+
+    &-subtitle {
+        margin: 10px 0px 0px 20px;
+    }
+
+    &-introduction {
+        margin: 10px 0px 0px  40px;
+    }
+    &-ps{
+        margin: 10px 0px 0px 40px;
+        ul{
+            list-style-type: none;
+            margin: 10px;
+        }
+        a{
+            color: map-get($blogs, text_color_hover);
+            text-decoration: none;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+        a:hover{
+            color: map-get($blogs, text_color_hover_2);
+            text-decoration: underline;
+        }
+    }
+}

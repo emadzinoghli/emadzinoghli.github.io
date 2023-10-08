@@ -1,0 +1,16 @@
+---
+layout: page
+title: Blog
+---
+<div class="blogs">
+
+    {%- capture url -%} {{ page.url | relative_url }} {%- endcapture -%}
+    {%- capture date -%} {{ page.date | date :"%b %-d, %Y" }} {%- endcapture -%}
+
+    {%- include components/blog-card.html title=page.title date=date text=page.content url=url show_excerpt=False tags=page.categories-%}
+    
+    <span class="post-subscribe">Subscribe </span>
+    {%- capture feed -%} {{"/feed.xml" | relative_url}} {%- endcapture -%}
+    {%- include components/ico-button.html url=feed text="RSS" icon="fa fa-rss" -%}
+
+</div>

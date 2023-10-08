@@ -1,0 +1,25 @@
+<div class="blog-card">
+    <div class="blog-card-title">
+        <h2><a href="{{include.url}}">{{include.title}}</a></h2>
+        <div class="blog-card-title-date"> 
+            <i class="fa fa-calendar"></i>
+            <span>{{include.date}}  </span>     
+        </div>
+    </div>
+    <div class="blog-card-text">
+        <p> {{include.text}} </p>
+    </div>
+    {%- if include.show_excerpt -%}
+    <div class="blog-card-readmore">
+        <a href="{{include.url}}"> Read more </a>
+    </div>
+    {%- endif -%}
+    {%- if include.tags -%}
+        <ul class="blog-card-tags">
+            {%- for tag in include.tags -%}
+                <li> <span>{{tag}}</span>  </li>
+            {%- endfor-%}
+        </ul>
+    {%- endif -%}
+    <hr class="blog-card-hr">
+</div>

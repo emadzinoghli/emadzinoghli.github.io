@@ -1,0 +1,22 @@
+header:
+  - title: Blog
+    url: /blogs
+  - title: About 
+    url: /about 
+  - title: Projects
+    url: /projects
+  - title: Research
+    url: /research
+  
+footer:
+  - title: Home
+    url : /
+  - title: Blog
+    url: /blogs
+  - title: About 
+    url: /about 
+  - title: Projects
+    url: /projects
+  - title: Research
+    url: /research
+  

@@ -1,0 +1,11 @@
+
+.base{
+    display: flex;
+    flex-direction: column;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: map-get($base, background_color);
+    border: map-get($base,border);
+    padding: map-get($base,padding);
+}

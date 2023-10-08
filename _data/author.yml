@@ -1,0 +1,13 @@
+author:
+  contact:
+    - title: Github
+      class: fa-brands fa-fw fa-github 
+      url: github.com
+    - title: Mail
+      class: fa-regular fa-fw fa-envelope 
+      url: mailto:youremail@gmail.com
+
+  disclaimers:
+    - Footnotes.
+
+  
