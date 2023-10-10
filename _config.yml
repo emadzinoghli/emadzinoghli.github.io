@@ -20,7 +20,7 @@
 
 title: Emad Zinoghli
 email: poshtvan.zinoghli@gmail.com
-tagline: Emad Zinoghli
+tagline: 
 description: >- # this means to ignore newlines until "baseurl:"
     Welcome to personal webpage!
 baseurl: "/" # the subpath of your site, e.g. /blog
