@@ -2,7 +2,7 @@
     <h3>&#167; {{include.title}} </h3>
     <p> {{include.description}} </p>
     {%- if include.button -%}
-        {%- include components/ico-button.html text=include.button url=include.url icon=include.icon -%}
+        {%- include components/ico-button.html class=include.class text=include.button url=include.url icon=include.icon -%}
     {%- endif -%}
     <br>
 </div>

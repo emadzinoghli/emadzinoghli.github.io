@@ -1,29 +1,43 @@
 ---
-layout: home
+layout: page
 title: Emad Zinoghli
 permalink: /
 ---
-<div class="home">
-<h1 class="home-title">
-     Emad Zinoghli
-</h1>
-
-<h2 class="home-subtitle"> Welcome! </h2>
-
-<p class="home-introduction">
-    I am Emad, a quantum technology enthusiast and a computer engineering major at Sharif University of Technology. 
-    <br>
-    This webpages serves as my main home base on the internet. I hope you enjoy browsing around!
-    <br>
-</p>
-
-<div class="home-ps">
-    <p>You may learn more about: </p>
+<div class="about">
+    <div class="about-bio">
+        <div class="about-bio-text">
+            <h1> About me </h1>
+            <p>
+                I am Emad Zinoghli, a fourth-year undergraduate at Sharif University of Technology, studying computer
+                engineering. I am interested quantum computing and information theory, theoretical computer science like complexity theory, and
+                cryptography.
+            </p>
+            <div class="about-cv">
+                {%- capture cvurl -%}{{"/assets/cv.pdf" | relative_url}}{%- endcapture -%}
+                <p> For more information, see my  {%- include components/ico-button.html class="PDF" text="Curriculum Vitae" url=cvurl icon="fa-regular fa-file-pdf" -%}</p>
+            </div>
+        </div>
+        <div class="about-bio-image">
+        <img src="assets/aboutme/me.jpg">
+    </div>
+    </div>
+    <div class="about-research">
+        <h3> Research Interest</h3>
+        <p> Pretty much anything that starts with a 'Q' catches my eyes  &#128513; &#128513;. That is why during my undergraduate years, I have learned about theoretical aspects and practical applications and implementation of quantum technologies. As a result, I have become intimately familiar with </p>
+        <ul> 
+            <li> Quantum error correcting codes</li>
+            <li> Quantum communication channels</li>
+            <li> Quantum cryptography (QKD)</li>
+            <li> Optical quantum communication schemes</li>
+            <li> Quantum computation and algorithms</li>
+            <li> <abbr title="Yes, it does not start with a 'Q' but I got too deep before knowing that &#128517;&#128517;. Although, in truth I really wanted and still want to break &#128520; them or prove their security &#128519;">  Post-quantum cryptography </abbr> mostly lattice- and code-based and a tad bit of isogeny-based. </li>
+        </ul>
+    <p> I also have gotten my hands dirty with </p>
     <ul>
-        <li> <a href="{{"/about" | relative_url}}"> me</a>.      </li>
-        <li> <a href="{{"/research" | relative_url}}"> my research</a>.      </li>
-        <li> <a href="{{"/project" | relative_url}}"> my projects</a>.      </li>
-        <li> <a href="{{"/blog" | relative_url}}"> my blogs</a>, my philosophy, and all other things I am interested. </li>
+        <li>Quantum and good ol' complexity theory</li>
+        <li>Model thoery and finite model theory</li>
+        <li>Good ol' information theory, coding theory, and some post-Shannon</li>
+        <li>Good ol' cryptography</li>
     </ul>
-</div>
+</div>    
 </div>

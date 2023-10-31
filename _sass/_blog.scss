@@ -1,0 +1,12 @@
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    .post-subscribe{
+        text-align: right;
+    }
+}
+
+@media screen and (max-width : #{$mobile}) {
+    
+}

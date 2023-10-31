@@ -6,7 +6,7 @@
             <ul>
                 <li> Subscribe to my
                     {%- capture feed -%} {{"/feed.xml" | relative_url}} {%- endcapture -%}
-                    {%- include components/ico-button.html url=feed text="RSS" icon="fa fa-rss" -%}
+                    {%- include components/ico-button.html class="RSS" url=feed text="RSS" icon="fa fa-rss" -%}
                      news feed. </li>
                 <li> Pages are generated via <a href="https://jekyllrb.com/"> jekyll </a> and are hosted by <a href="https://pages.github.com/"> Github pages</a>.</li>
                 <li> Licensed under a <a href="{{site.data.licenses.CC-BY-NC-4.url}}">Creative Commons Licence <img src="{{site.data.licenses.CC-BY-NC-4.image}}" alt="CC-BY-NC-4.0" style="height: 15px; width: 44px ;"></a>. </li>

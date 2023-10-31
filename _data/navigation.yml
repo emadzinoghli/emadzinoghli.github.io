@@ -1,8 +1,6 @@
 header:
   - title: Blog
     url: /blogs
-  - title: About 
-    url: /about 
   - title: Projects
     url: /projects
   - title: Research
@@ -13,8 +11,6 @@ footer:
     url : /
   - title: Blog
     url: /blogs
-  - title: About 
-    url: /about 
   - title: Projects
     url: /projects
   - title: Research

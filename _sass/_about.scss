@@ -15,6 +15,14 @@
             margin: 10px; 
         }
     }
+    &-research{
+        p{
+            margin: 10px;
+        }
+        ul{
+            margin: 0 0 0 60px ;
+        }
+    }
 
 }
 @media screen and (max-width: #{$mobile}){
@@ -33,5 +41,8 @@
         &-text{
             order : 2;
         }
+    }
+    &-research ul{
+        margin: 0 0 0 40px;
     }
 }}
