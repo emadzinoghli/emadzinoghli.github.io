@@ -48,37 +48,41 @@ permalink: /projects
 <h2> Course Projects </h2>
 {%- include components/project-card.html 
     title="Digital System Design"
-    description="Amertat is the theme that I am using for my personal website. It uses jekyll and is still under development."
+    description="We developed a parallel processing unit that multiplies two floating point matrices."
     class="Github"
     button="view on Github"
-    url="https://github.com/alxelr2014/emad.zinoghli"
+    url="https://github.com/alxelr2014/dsd_project"
     icon="fa-brands fa-github" -%}
 {%- include components/project-card.html 
     title="Computer Architecture"
-    description="Amertat is the theme that I am using for my personal website. It uses jekyll and is still under development."
-    class="Github"
-    button="view on Github"
-    url="https://github.com/alxelr2014/emad.zinoghli"
-    icon="fa-brands fa-github" -%}
+    description="During the course, we had to develop a pipelined processing unit with floating point support using Quartus II."
+    class="PDF"
+    button="It is not online and only in Persian"
+    url=""
+    icon="fa-regular fa-file-pdf" -%}
 {%- include components/project-card.html 
     title="Data Structure"
-    description="Amertat is the theme that I am using for my personal website. It uses jekyll and is still under development."
-    class="Github"
-    button="view on Github"
-    url="https://github.com/alxelr2014/emad.zinoghli"
-    icon="fa-brands fa-github" -%}
+    description="The challenge is given a static database of a social media network, develop a cache system that performs well. That is, it maximizes the hit rate on an unknown set of queries."
+    class="PDF"
+    button="It is not online and only in Persian"
+    url=""
+    icon="fa-regular fa-file-pdf" -%}
+
 {%- include components/project-card.html 
     title="Advanced Programming"
-    description="Amertat is the theme that I am using for my personal website. It uses jekyll and is still under development."
+    description="For our Advanced Programming project we developed a mini game distribution software like Steam together with a game of Risk."
     class="Github"
     button="view on Github"
-    url="https://github.com/alxelr2014/emad.zinoghli"
+    url="https://github.com/AP2020Fall/project-team-team-2"
     icon="fa-brands fa-github" -%}
 <h2> Miscellaneous Projects </h2>
+
+    {%- capture desc -%}
+    <a href="projecteuler.net">Project Euler</a> is a website of mathematical problems and challenges that can be efficiently programmed. The goal is that by solving these question one becomes familiar with different areas of mathematics by analyzing the structure of the objects. You may "friend" on project euler with my key <code>1625677_3Z9KgJ1c6NknpqYtjIlEGcgbKCE2l0TZ</code>.
+    {%- endcapture -%}
 {%- include components/project-card.html 
     title="Project Euler"
-    description="Amertat is the theme that I am using for my personal website. It uses jekyll and is still under development."
-    class="Github"
-    button="view on Github"
-    url="https://github.com/alxelr2014/emad.zinoghli"
-    icon="fa-brands fa-github" -%}
+    description=desc
+    button=""
+    url=""
+    icon="" -%}
