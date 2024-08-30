@@ -5,7 +5,20 @@ permalink: /projects
 ---
 <h1> Projects </h1>
     {%- capture desc -%}
-    It is the code for my research internship at <abbr title="Technical University of Munich"> TUM </abbr> on the subject of <q>Identification codes via prime numbers.</q> It is comprised of two parts. The first part simulates a discrete memoryless channel given its characteristics. The second part is a prime generation algorithm using the GMP library.
+    We are developing a Python-based software designed for simulating and analyzing bosonic (optical) quantum communication schemes. The goal of this project is to create a comprehensive library capable of simulating quantum internet protocols in realistic scenarios, offering a wide range of performance metrics and statistics. This software is a product of the newly established Sharif Quantum Software Lab, dedicated to advancing research and innovation in quantum technologies.
+    {%- endcapture -%}
+
+    {%- include components/project-card.html 
+        title="Bosonic Library"
+        description=desc
+        class="Github"
+        button="view on Github"
+        url="https://github.com/alxelr2014/BosonicLibrary"
+        icon="fa-brands fa-github" -%}
+
+
+    {%- capture desc -%}
+    It is the code for my research internship at <abbr title="Technical University of Munich"> TUM </abbr> on the subject of <q>Identification codes via prime numbers.</q> It is comprised of two parts. The first part simulates a discrete memoryless channel given its characteristics. The second part is a prime generation algorithm using the GMP library. It is currently private.
     {%- endcapture -%}
     
     {%- include components/project-card.html 
